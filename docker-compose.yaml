@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "8761:8761"
+      - "8080:8080"
+    volumes:
+      - .:/app
+    environment:
+      app.name: SpringBootEureka
+    networks:
+      - local-sub-net
+
+
+
+networks:
+  local-sub-net:
+    driver: bridge
