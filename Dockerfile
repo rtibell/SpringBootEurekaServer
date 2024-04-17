@@ -16,4 +16,4 @@ EXPOSE 8080
 ADD target/SpringBootEureka-1.0.0-SNAPSHOT.jar myapplication.jar
 
 # Run the jar file
-ENTRYPOINT ["java", "-jar", "/myapplication.jar"]%
+ENTRYPOINT ["java", "-jar", "/myapplication.jar"]
